@@ -1,0 +1,9 @@
+---
+- name: configure motd 
+  import_tasks: deploy_motd.yml
+- name: install nagios client 
+  import_tasks: deploy_nagios.yml
+- name: changing the hosts file
+  import_tasks: edit_hosts.yml
+- name: deploying noc user
+  import_tasks: deploy_noc_user.yml
